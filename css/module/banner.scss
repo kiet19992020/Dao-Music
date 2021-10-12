@@ -1,10 +1,11 @@
 .banner {
     background-color: $black;
-    background-image: url(https://gentium.pixerex.com/agency-dark/wp-content/uploads/sites/14/2019/12/ron-whitaker-mVuKCYMGZBM-unsplash-1-scaled.jpg);
+    background-image: url(https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?cs=srgb&dl=pexels-garrett-morrow-1649771.jpg&fm=jpg);
     @include background-size(cover);
     @include position(relative,0,null,null,1);
     width: 100%;
     padding: 180px 0px 160px 0px;
+    mix-blend-mode: difference;
     &-content {
         display: flex;
         justify-content: center;

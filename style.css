@@ -128,7 +128,7 @@ h3,
 
 .banner {
   background-color: black;
-  background-image: url(https://gentium.pixerex.com/agency-dark/wp-content/uploads/sites/14/2019/12/ron-whitaker-mVuKCYMGZBM-unsplash-1-scaled.jpg);
+  background-image: url(https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?cs=srgb&dl=pexels-garrett-morrow-1649771.jpg&fm=jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -136,7 +136,8 @@ h3,
   top: 0;
   left: 1;
   width: 100%;
-  padding: 180px 0px 160px 0px; }
+  padding: 180px 0px 160px 0px;
+  mix-blend-mode: difference; }
   .banner-content {
     display: flex;
     justify-content: center;
@@ -326,7 +327,8 @@ h3,
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem 3.5rem;
-  margin-right: 6rem; }
+  margin-right: 6rem;
+  margin-bottom: 4rem; }
 
 .footer-form-control {
   background-color: transparent;
@@ -356,3 +358,14 @@ h3,
         padding: 0 1rem;
         font-size: 1.4rem;
         font-family: "Roboto", sans-serif; }
+
+.footer .btn-send {
+  padding: 1rem 5rem;
+  max-width: 200px;
+  width: 100%;
+  background-color: #e9204f; }
+  .footer .btn-send span {
+    font-family: "Overpass", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-style: normal; }
