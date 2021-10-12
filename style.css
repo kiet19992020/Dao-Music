@@ -135,7 +135,7 @@ h3,
   top: 0;
   left: 2;
   width: 100%;
-  padding: 180px 0px 160px 0px;
+  padding: 18.1rem 0px;
   background-color: black;
   mix-blend-mode: overlay; }
   .banner .video {
@@ -216,12 +216,15 @@ h3,
     background-color: #191919;
     border-radius: 0.5rem;
     padding: 5rem 3rem;
-    box-shadow: 2px 2px 10px -1px black; }
+    box-shadow: 2px 2px 10px -1px black;
+    cursor: pointer; }
     .digital .digital-items-icon {
       height: 6rem;
       margin-left: -1rem;
       padding-bottom: 3rem;
-      color: white; }
+      color: #ffffff; }
+    .digital .digital-items-title {
+      color: #ffffff; }
     .digital .digital-items-text {
       line-height: 2.6rem; }
 
