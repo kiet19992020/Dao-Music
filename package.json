@@ -1,0 +1,24 @@
+{
+  "name": "d_a",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass ./css/style.scss style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-minify": "^3.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

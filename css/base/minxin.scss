@@ -1,0 +1,44 @@
+@mixin position($type: null, $top: null, $right: null, $bottom: null, $left: null, $index: null) {
+  position: $type;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $index;
+}
+
+@mixin background-size($size) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $size;
+}
+@mixin font(
+  $name: $font-family-sans-serif,
+  $size: $font-size-base,
+  $color: $text-color,
+  $weight: normal,
+  $style: normal
+) {
+  font-family: $name;
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  font-style: $style;
+}
+@mixin sizeEx($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+
+@mixin hideTapHighlightColor() {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@mixin hardwareAccel() {
+	transform: translateZ(0);
+}
+
+@mixin improveAntiAlias() {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}

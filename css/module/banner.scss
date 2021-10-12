@@ -1,0 +1,31 @@
+.banner {
+    background-color: $black;
+    background-image: url(https://gentium.pixerex.com/agency-dark/wp-content/uploads/sites/14/2019/12/ron-whitaker-mVuKCYMGZBM-unsplash-1-scaled.jpg);
+    @include background-size(cover);
+    @include position(relative,0,null,null,1);
+    width: 100%;
+    padding: 180px 0px 160px 0px;
+    &-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 30px 70px 30px;
+        &-title {
+            @include font($Op,7rem,null,800);
+            margin-bottom: 4rem;
+        }
+        &-text {
+            @include font($Rb,1.6rem,null,400);
+            max-width: 40%;
+            line-height: 2.7rem;
+            margin-bottom: 5rem;
+        }
+    }
+    .btn-banner {
+        padding: 2.2rem 4.2rem;
+        @include font($Op,1.9rem,null,700);
+        line-height: 2.4rem;
+    }
+}

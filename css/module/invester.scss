@@ -1,0 +1,14 @@
+.invester {
+    .list-invester {
+        display: grid;
+        margin: 0 2rem;
+        border-top: 2px solid $grey-100;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 2rem 1rem;
+        padding: 2rem 5rem;
+        &-items {
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.header {
+    padding: 3rem 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-logo {
+        @include font($Op,3.15rem,null,800);
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+    }
+    &-list {
+        display: flex;
+    }
+    .list-item {
+        @include font($Op,1.5rem,null,700);
+        padding: 10px 20px;
+        .item-social {
+           padding: 0 0.75rem;
+        }
+    }
+    .active {
+        position: relative;
+        &::before {
+            content: '';
+            @include position(absolute,2rem,null,0,null,null);
+            @include sizeEx(25px,3px);
+            background-color: $red;
+        }
+    }
+}
