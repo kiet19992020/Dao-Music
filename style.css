@@ -37,7 +37,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background-color: #101010;
+  background-color: #ffffff;
   color: #ffffff; }
 
 ol, ul {
@@ -60,7 +60,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #ffffff; }
+  color: black; }
 
 .container {
   max-width: 1200px;
@@ -78,6 +78,7 @@ h2,
 .h2 {
   font-family: "Overpass", sans-serif;
   font-size: 5rem;
+  color: black;
   font-weight: 800;
   text-transform: capitalize;
   letter-spacing: -.88px;
@@ -87,6 +88,7 @@ h3,
 .h3 {
   font-family: "Overpass", sans-serif;
   font-size: 2.2rem;
+  color: black;
   font-weight: 800; }
 
 .header {
@@ -101,8 +103,8 @@ h3,
   .header-logo {
     font-family: "Overpass", sans-serif;
     font-size: 3.15rem;
+    color: #ffffff;
     font-weight: 800;
-    font-style: normal;
     text-transform: capitalize;
     letter-spacing: 0.5px; }
   .header-list {
@@ -111,10 +113,12 @@ h3,
     font-family: "Overpass", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
-    font-style: normal;
     padding: 10px 20px; }
     .header .list-item .item-social {
-      padding: 0 0.75rem; }
+      padding: 0 0.75rem;
+      color: #ffffff; }
+    .header .list-item a {
+      color: #ffffff; }
   .header .active {
     position: relative; }
     .header .active::before {
@@ -127,17 +131,22 @@ h3,
       background-color: #CF1C46; }
 
 .banner {
-  background-color: black;
-  background-image: url(https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?cs=srgb&dl=pexels-garrett-morrow-1649771.jpg&fm=jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   position: relative;
   top: 0;
-  left: 1;
+  left: 2;
   width: 100%;
   padding: 180px 0px 160px 0px;
-  mix-blend-mode: difference; }
+  background-color: black;
+  mix-blend-mode: overlay; }
+  .banner .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; }
   .banner-content {
     display: flex;
     justify-content: center;
@@ -233,7 +242,7 @@ h3,
       overflow: hidden;
       border-radius: 0.8rem;
       position: relative;
-      box-shadow: 2px 2px 10px 2px black;
+      box-shadow: 2px 2px 10px 2px #999999;
       opacity: 0.9; }
       .selected .selected-list-items .item-content {
         position: absolute;
@@ -276,6 +285,8 @@ h3,
     width: 100%;
     height: 100%;
     object-fit: cover; }
+  .selected .items-name {
+    color: #ffffff; }
 
 .invester .list-invester {
   display: grid;

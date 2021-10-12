@@ -47,7 +47,7 @@ html {
 }
 a {
     text-decoration: none;
-	color: $white;
+	color: $black;
 }
 .container {
 	max-width: 1200px;
@@ -64,7 +64,7 @@ a {
 }
 h2,
 .h2 {
-	@include font($Op,5rem,null,800,null);
+	@include font($Op,5rem,$black,800,null);
 	text-transform: capitalize;
 	letter-spacing: -.88px;
 	line-height: 1.2;
@@ -72,7 +72,7 @@ h2,
 
 h3,
 .h3 {
-	@include font($Op,2.2rem,null, 800,null);
+	@include font($Op,2.2rem,$black, 800,null);
 }
 // h4,
 // .h4 {

@@ -1,11 +1,16 @@
 .banner {
-    background-color: $black;
-    background-image: url(https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?cs=srgb&dl=pexels-garrett-morrow-1649771.jpg&fm=jpg);
-    @include background-size(cover);
-    @include position(relative,0,null,null,1);
+    // background-color: $black;
+    @include position(relative,0,null,null,2);
     width: 100%;
     padding: 180px 0px 160px 0px;
-    mix-blend-mode: difference;
+    background-color: $black;
+    mix-blend-mode: overlay;
+    .video {
+        @include position(absolute,0,null,null,0,-1);
+        @include sizeEx(100%);
+        object-fit: cover;
+        opacity: 0.5;
+    }
     &-content {
         display: flex;
         justify-content: center;

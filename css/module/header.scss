@@ -9,7 +9,7 @@
         justify-content: space-between;
     }
     &-logo {
-        @include font($Op,3.15rem,null,800);
+        @include font($Op,3.15rem,$white,800,null);
         text-transform: capitalize;
         letter-spacing: 0.5px;
     }
@@ -17,10 +17,14 @@
         display: flex;
     }
     .list-item {
-        @include font($Op,1.5rem,null,700);
+        @include font($Op,1.5rem,null,700,null);
         padding: 10px 20px;
         .item-social {
            padding: 0 0.75rem;
+           color: $white;
+        }
+        a {
+            color: $white;
         }
     }
     .active {
