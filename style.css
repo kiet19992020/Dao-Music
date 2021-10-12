@@ -298,6 +298,8 @@ h3,
   .invester .list-invester-items {
     text-align: center;
     cursor: pointer; }
+  .invester .list-invester img {
+    height: 5rem; }
 
 .footer-content {
   display: grid;
